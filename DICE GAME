@@ -1,0 +1,16 @@
+#IMPORT RANDOM VARIABLE
+import random
+    #LOOP
+while True:
+    start = input('Ready to roll?(y/n): ').lower()
+    if start == 'y': #IF FUNCTION
+        stardice1  = random.randint(1, 6)
+        stardice2  = random.randint(1, 6)
+        print(f'({stardice1}, {stardice2})')
+    elif start == 'n':
+        print('ABEG SHIFT!') 
+        break
+    else:
+        print('Invalid choice!')
+    if stardice1 + stardice2 == 7 or stardice1 + stardice2 == 11 :
+        print('PRESIDENT GENERAL AMONG THE NATIONS!')
